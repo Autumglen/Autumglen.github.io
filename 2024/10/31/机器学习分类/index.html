@@ -13,13 +13,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="速览​		机器学习是一种人工智能的分支，它是人工智能核心，是使计算机具有智能的根本途径，它关注如何让计算机通过学习从数据中自主地发现模式、关联和Insights。 ​		而人工智能是一种更广泛的概念，它关注如何让计算机具有人类级别的智能，包括理解语言、解决问题、学习等多种能力。 ​		几十年来，研究发表的机器学习的方法种类很多，根据强调侧面的不同可以有多种分类方法。 ​		现在我们大多人会直观的基">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/Ryan/Desktop/%E7%94%B5%E8%84%91%E5%AD%A6%E4%B9%A0/markdown/markdown%E5%9B%BE%E7%89%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png">
+<meta property="og:image" content="http://example.com/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png">
 <meta property="article:published_time" content="2024-10-31T13:37:53.000Z">
-<meta property="article:modified_time" content="2024-10-31T13:51:27.432Z">
+<meta property="article:modified_time" content="2024-10-31T14:13:51.992Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="机器学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/Ryan/Desktop/%E7%94%B5%E8%84%91%E5%AD%A6%E4%B9%A0/markdown/markdown%E5%9B%BE%E7%89%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png">
+<meta name="twitter:image" content="http://example.com/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -104,22 +104,27 @@
 <p>​		而人工智能是一种更广泛的概念，它关注如何让计算机具有人类级别的智能，包括理解语言、解决问题、学习等多种能力。</p>
 <p>​		几十年来，研究发表的机器学习的方法种类很多，根据强调侧面的不同可以有多种分类方法。</p>
 <p>​		现在我们大多人会直观的<strong>基于学习方式进行分类</strong>，在2017年出版的《机器学习原理及应用》[2]一书中写明的机器学习分类是：</p>
-<p>（1）监督学习（有导师学习）：输入数据中有导师信号，以概率函数、代数函数或人工神经网络为基函数模型，采用迭代计算方法，学习结果为函数。</p>
-<p>（2）无监督学习（无导师学习）：输入数据中无导师信号，采用聚类方法，学习结果为类别。典型的无导师学习有发现学习、聚类、竞争学习等。</p>
-<p>（3）<strong>强化学习（增强学习）</strong>：以环境反馈（奖&#x2F;惩信号）作为输入，以统计和动态规划技术为指导的一种学习方法。</p>
-<p>​		现在我们都是用<font size=3 color="red"><strong>标签</strong></font>来说明<font size=3 color="red">（用正确答案已知的例子来训练神经网络，这就是标记过的数据。那么无监督就是没答案没输出的数据，你让它自己找规律）</font>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">（1）监督学习（有导师学习）：输入数据中有导师信号，以概率函数、代数函数或人工神经网络为基函数模型，采用迭代计算方法，学习结果为函数。</span><br><span class="line"></span><br><span class="line">（2）无监督学习（无导师学习）：输入数据中无导师信号，采用聚类方法，学习结果为类别。典型的无导师学习有发现学习、聚类、竞争学习等。</span><br><span class="line"></span><br><span class="line">（3）强化学习（增强学习）：以环境反馈（奖/惩信号）作为输入，以统计和动态规划技术为指导的一种学习方法。</span><br></pre></td></tr></table></figure>
+
+<p>​		现在我们都是用<font size=3 color="red"><strong>标签</strong></font>来说明（<strong>监督学习</strong>用正确答案<font size=3 color="red">已知</font>的例子来训练神经网络，这就是标记过的数据。那么<strong>无监督</strong>就是没答案没输出的数据，你<font size=3 color="red">让它自己找规律</font>）：</p>
+<blockquote>
 <ol>
 <li><strong>监督学习</strong>：监督学习是一种基于标签的学习方法，其中输入数据被分为多个类别，每个类别都有一个标签。监督学习的目标是让计算机从标签中学习如何对未知数据进行分类。</li>
 <li><strong>无监督学习</strong>：无监督学习是一种不基于标签的学习方法，其中输入数据没有标签。无监督学习的目标是让计算机从数据中自主地发现模式、关联和Insights。</li>
-<li><strong>强化学习</strong>：强化学习是一种基于奖励和惩罚的学习方法<font size=3 color="red">（使用未标记的数据，但是可以通过某种方法知道你是离正确答案越来越近还是越来越远）</font>，其中计算机通过与环境的互动来学习如何做出最佳决策。强化学习的目标是让计算机从环境中学习如何最大化累积奖励。</li>
+<li><strong>强化学习（增强学习）</strong>：强化学习是一种基于奖励和惩罚的学习方法（使用<font size=3 color="red">未标记的数据</font>，但是可以通过某种方法知道你是离正确答案越来越近还是越来越远），其中计算机通过与环境的互动来学习如何做出最佳决策。强化学习的目标是让计算机从环境中学习如何最大化累积奖励。</li>
 </ol>
+</blockquote>
 <p>​		而半监督式学习是监督学习与无监督学习相结合的一种学习方法，<font size=3 color="red">其使用的数据一小部分是标记过的，而大部分是没有标记的</font>。大部分人也会将其归于上面作为第四种机器学习方法。</p>
+<blockquote>
 <ol start="4">
 <li><strong>半监督学习</strong>：半监督学习是一种在监督学习和无监督学习之间的混合学习方法，其中部分输入数据有标签，部分数据没有标签。半监督学习的目标是让计算机从有标签的数据中学习如何处理无标签的数据。</li>
 </ol>
+</blockquote>
 <p>那么<strong>深度学习</strong>是什么呢？</p>
+<blockquote>
 <p>​		深度学习（DL，Deep Learning）是机器学习（ML，Machine Learning）领域中一个新的<em>研究方向</em>，它被引入机器学习使其更接近于最初的目标——人工智能（AI，Artificial Intelligence）。</p>
 <p>​		<font size=3 color="red">深度学习（Deep Learning）是一种基于人工神经网络的机器学习方法</font>，它通过多层神经网络进行非线性变换和特征提取，以实现对复杂数据的建模和处理。</p>
+</blockquote>
 <p>而<strong>迁移学习</strong>呢？</p>
 <p>​		深度学习中在计算机视觉任务和自然语言处理任务中将预训练的模型作为新模型的起点是一种常用的方法，通常这些预训练的模型在开发神经网络的时候已经消耗了巨大的时间资源和计算资源，迁移学习可以将已习得的强大技能迁移到相关的的问题上。</p>
 <p>​		迁移学习<font size=3 color="red">是一种机器学习的方法</font>，指的是一个预训练的模型被重新用在另一个任务中。</p>
@@ -139,7 +144,7 @@
 <h2 id="三、机器学习基本过程"><a href="#三、机器学习基本过程" class="headerlink" title="三、机器学习基本过程"></a>三、机器学习基本过程</h2><p><strong>机器学习发展历程</strong></p>
 <p>从机器学习发展的过程上来说，其发展的时间轴如下所示：</p>
 <p>图解<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/2039572">[5]</a></p>
-<p><img src="C:/Users/Ryan/Desktop/%E7%94%B5%E8%84%91%E5%AD%A6%E4%B9%A0/markdown/markdown%E5%9B%BE%E7%89%87/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png" alt="img"></p>
+<p><img src="/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/660.png" alt="img"></p>
 <p>机器学习发展历程</p>
 <p>从上世纪50年代的图灵测试提出、塞缪尔开发的西洋跳棋程序，标志着机器学习正式进入发展期。</p>
 <ul>
@@ -243,7 +248,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/" data-id="cm2xd9x0w0000lgvz3kcd0m5j" data-title="机器学习分类" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/" data-id="cm2xdzjdn0004j4vzeu5z306k" data-title="机器学习分类" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -254,6 +259,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          markdown使用指南
+        
+      </div>
+    </a>
   
   
     <a href="/2024/10/29/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F(1)/" id="article-nav-older" class="article-nav-link-wrap">
@@ -275,7 +289,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/markdown/">markdown</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></li></ul>
     </div>
   </div>
 
@@ -285,7 +299,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" rel="tag">计算机基础</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/" rel="tag">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag">机器学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" rel="tag">计算机基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" rel="tag">语言学习</a></li></ul>
     </div>
   </div>
 
@@ -295,7 +309,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">机器学习</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">计算机基础</a>
+      <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">机器学习</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">计算机基础</a> <a href="/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">语言学习</a>
     </div>
   </div>
 
@@ -315,6 +329,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">markdown使用指南</a>
+          </li>
         
           <li>
             <a href="/2024/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/">机器学习分类</a>
