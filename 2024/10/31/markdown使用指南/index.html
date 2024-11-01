@@ -212,7 +212,7 @@
 <p><code>![]()+空格</code></p>
 <p>上面即为插入图片的指令，加上空格才能使用！</p>
 <p><strong>（2）mermaid（流程图）</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">graph TD<br>A[方形] --&gt;B(圆角)<br><br>B --&gt; C&#123;条件a&#125;<br><br>C --&gt;|a=1| D[结果1]<br><br>C --&gt;|a=2| E[结果2]<br><br>F[横向流程图]<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">graph TD<br>A[方形] --&gt;B(圆角)<br><br>B --&gt; C&#123;条件a&#125;<br><br>C --&gt;|a=1| D[结果1]<br><br>C --&gt;|a=2| E[结果2]<br><br>F[横向流程图]<br></code></pre></td></tr></table></figure>
 
 <p>在代码块右下方写明:mermaid</p>
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203721635.png" alt="image-20241101203721635"></p>
@@ -225,25 +225,25 @@
 <p>sub1&#x3D;&gt;subroutine: 子流程</p>
 <p>io&#x3D;&gt;inputoutput: 输入输出框</p>
 <p>e&#x3D;&gt;end: 结束框</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">st=&gt;start: 开始框<br><br>op=&gt;operation: 处理框<br><br>cond=&gt;condition: 判断框(是或否?)<br><br>sub1=&gt;subroutine: 子流程<br><br>io=&gt;inputoutput: 输入输出框<br><br>e=&gt;end: 结束框<br><br>st-&gt;op-&gt;cond<br><br>cond(yes)-&gt;io-&gt;e<br><br>cond(no)-&gt;sub1(right)-&gt;op<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">st=&gt;start: 开始框<br><br>op=&gt;operation: 处理框<br><br>cond=&gt;condition: 判断框(是或否?)<br><br>sub1=&gt;subroutine: 子流程<br><br>io=&gt;inputoutput: 输入输出框<br><br>e=&gt;end: 结束框<br><br>st-&gt;op-&gt;cond<br><br>cond(yes)-&gt;io-&gt;e<br><br>cond(no)-&gt;sub1(right)-&gt;op<br></code></pre></td></tr></table></figure>
 
 <p>在代码块右下方写明:flow</p>
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203920339.png" alt="image-20241101203920339"></p>
 <p><strong>（4）sequence</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs sequence">对象A-&gt;对象B: 对象B你好吗?（请求）<br><br>Note right of 对象B: 对象B的描述<br><br>Note left of 对象A: 对象A的描述(提示)<br><br>对象B-&gt;对象A: 我很好(响应)<br><br>对象A-&gt;对象B: 你真的好吗？<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs sequence">对象A-&gt;对象B: 对象B你好吗?（请求）<br><br>Note right of 对象B: 对象B的描述<br><br>Note left of 对象A: 对象A的描述(提示)<br><br>对象B-&gt;对象A: 我很好(响应)<br><br>对象A-&gt;对象B: 你真的好吗？<br></code></pre></td></tr></table></figure>
 
 <p>更多内容可访问右边网址进行学习：<code>https://jingyan.baidu.com/article/48b558e3035d9a7f38c09aeb.html</code></p>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><strong>（1）行内代码，即代码</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">行内代码` ：在文本两侧各加一个`（ESC键下方的键）或两个``<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">行内代码` ：在文本两侧各加一个`（ESC键下方的键）或两个``<br></code></pre></td></tr></table></figure>
 
 <p>，对应效果：<code>行内代码</code></p>
 <p>快捷键为 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Ctrl + Shift + `<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">Ctrl + Shift + `<br></code></pre></td></tr></table></figure>
 
 
 
 <p><strong>（2）代码块</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">在行首输入 ``` （ESC键下方的键）后并输入语言名（有补全提示），回车，则生成代码块。<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">在行首输入 ``` （ESC键下方的键）后并输入语言名（有补全提示），回车，则生成代码块。<br></code></pre></td></tr></table></figure>
 
 <p>可在“偏好设置”中设置是否“显示行号”。</p>
 <p>快捷键为<code>Ctrl + Shift + K</code></p>
@@ -253,7 +253,7 @@
 <p><strong>（1）公式块</strong></p>
 <p>快捷键为<code>Ctrl + Shift + M</code></p>
 <p>表现如下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>1+1=2<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>1+1=2<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204005590.png" alt="image-20241101204005590"></p>
 <p><em>注意：</em></p>
@@ -262,40 +262,40 @@
 <p><code>$$+enter</code></p>
 <p>如果要在行间公式内换行，在换行的位置使用<code>\\</code>。</p>
 <p><strong>2.1 上标下标</strong><br>上下标可以使用^，_后跟相应的符号来实现。如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>e^&#123;111&#125;\\e_&#123;111&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>e^&#123;111&#125;\\e_&#123;111&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204048078.png" alt="image-20241101204048078"></p>
 <p>如果作为上标、下标的符号不止一个，则需要用花括号{}将其括起来。如：</p>
 <p><strong>2.2根号</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\sqrt&#123;2&#125;\\\sqrt[3]&#123;4&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\sqrt&#123;2&#125;\\\sqrt[3]&#123;4&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101202226842.png" alt="image-20241101202226842"></p>
 <p>我们可以使用\sqrt{}来表示根号。</p>
 <p>我们也可以使用\sqrt[]{}来表示更具体的根号信息：</p>
 <p><strong>2.3上下水平线</strong><br>我们可以使用\underline{},\overline{}来表示上下水平线，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>下水平线：\underline&#123;a+b&#125;\\上水平线：\overline&#123;a+b&#125;\\\overbrace&#123;x_1+x_2+x_3&#125;^&#123;3个元素&#125;\\\underbrace&#123;x_1+x_2+x_3&#125;_&#123;3个元素&#125;<br>$$				<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>下水平线：\underline&#123;a+b&#125;\\上水平线：\overline&#123;a+b&#125;\\\overbrace&#123;x_1+x_2+x_3&#125;^&#123;3个元素&#125;\\\underbrace&#123;x_1+x_2+x_3&#125;_&#123;3个元素&#125;<br>$$				<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101202259377.png" alt="image-20241101202259377"></p>
 <p>当然，我们也可以在括号上添加说明，使用语法为\overbrace{}^{}和\underbrace{}_{}</p>
 <p><strong>2.4向量符号</strong><br>我们可以使用\vec{}来表示单个字母向量，其实也可以表示多个字母，但不美观，另两个命令\overrightarrow{} 和\overleftarrow{}在定义从A 到B 的向量时非常有用。如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\vec&#123;AB&#125;\\\vec&#123;ABC&#125;\\\overrightarrow&#123;AB&#125;\\\overleftarrow&#123;AB&#125;<br>$$<br>					<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\vec&#123;AB&#125;\\\vec&#123;ABC&#125;\\\overrightarrow&#123;AB&#125;\\\overleftarrow&#123;AB&#125;<br>$$<br>					<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203145419.png" alt="image-20241101203145419"></p>
 <p><strong>2.5分数</strong><br>我们可以使用\frac{}{}来表示分数，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\frac&#123;1&#125;&#123;2&#125;\\\frac&#123;\sqrt&#123;3&#125;&#125;&#123;4&#125;<br>$$				<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\frac&#123;1&#125;&#123;2&#125;\\\frac&#123;\sqrt&#123;3&#125;&#125;&#123;4&#125;<br>$$				<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203247049.png" alt="image-20241101203247049"></p>
 <p><strong>2.6积分运算符</strong><br>积分运算符用\int 来生成 ，用\int_{}^{}来表示积分上下界，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\int\\\int_&#123;1&#125;^&#123;2&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\int\\\int_&#123;1&#125;^&#123;2&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203318995.png" alt="image-20241101203318995"></p>
 <p><strong>2.7 求和运算符</strong><br>求和运算符可以使用\sum来生成，用\sum_{}^{}来表示求和上下界，如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\sum\\\sum_&#123;i=1&#125;^&#123;10&#125;x_i<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\sum\\\sum_&#123;i=1&#125;^&#123;10&#125;x_i<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203502485.png" alt="image-20241101203502485"></p>
 <p><strong>2.8 连乘运算符</strong><br>连乘运算符用\prod{}表示，同样地，上下标用prod_{}^{}表示，如：</p>
 <p>$\prod$<br>$\prod_{i&#x3D;1}^{10}x_i$</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\prod_&#123;i=1&#125;^&#123;10&#125;x_i\\\prod<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\prod_&#123;i=1&#125;^&#123;10&#125;x_i\\\prod<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203355060.png" alt="image-20241101203355060"></p>
 <p><strong>2.9 特殊符号</strong><br>希腊字母</p>
@@ -310,7 +310,7 @@
 <p>加+ 减-</p>
 <p>乘× \times×为\times 除÷ \div÷为\div</p>
 <p><strong>2.10 矩阵表示</strong><br>我们可以使用以下格式来显示矩阵：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6\\<br>\end&#123;matrix&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6\\<br>\end&#123;matrix&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101203424025.png" alt="image-20241101203424025"></p>
 <p>可是这并不是我们常见的矩阵啊，旁边的中括号呢？</p>
@@ -318,16 +318,16 @@
 <p>\begin{matrix}和\end{matrix}说明在它们之间的是矩阵</p>
 <p>1 &amp; 2 &amp; 3\表示第一行的元素，其中用&amp;来分割每一个元素，用\来换行</p>
 <p>现在我们来加括号，很简单，语法如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\left[\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6<br>\end&#123;matrix&#125;\right]<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\left[\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6<br>\end&#123;matrix&#125;\right]<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204200931.png" alt="image-20241101204200931"><br>$$<br>\left[\begin{matrix}<br>1 &amp; 2 &amp; 3\<br>4 &amp; 5 &amp; 6<br>\end{matrix}\right]<br>$$</p>
 <p>其实我们仅仅在\begin{matrix}前面加了\left[，在\end{matrix}后面加了\right]，这样就能正确显示括号了，那我们可以将[]改为||吗，当然可以，就简单地把\left[，\right]改为\left|和\right|即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\left|\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6<br>\end&#123;matrix&#125;\right|<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\left|\begin&#123;matrix&#125;<br>1 &amp; 2 &amp; 3\\<br>4 &amp; 5 &amp; 6<br>\end&#123;matrix&#125;\right|<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204230544.png" alt="image-20241101204230544"></p>
 <p>这里仅仅介绍简单的矩阵表示，如果要了解更多矩阵表示法，请自行搜索了解，网上的资料很多。</p>
 <p><strong>2.11 方程组</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>\begin&#123;equation&#125;<br>\left\&#123;<br>             \begin&#123;array&#125;&#123;lr&#125;<br>             x=\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)\cos(\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)), &amp;  \\<br>             y=s, &amp; 0\leq s\leq L,|t|\leq1.\\<br>             z=\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)\sin(\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)), &amp;  <br>             \end&#123;array&#125;<br>\right.<br>\end&#123;equation&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>\begin&#123;equation&#125;<br>\left\&#123;<br>             \begin&#123;array&#125;&#123;lr&#125;<br>             x=\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)\cos(\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)), &amp;  \\<br>             y=s, &amp; 0\leq s\leq L,|t|\leq1.\\<br>             z=\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)\sin(\dfrac&#123;3\pi&#125;&#123;2&#125;(1+2t)), &amp;  <br>             \end&#123;array&#125;<br>\right.<br>\end&#123;equation&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204352183.png" alt="image-20241101204352183"></p>
 <p>现在我们一一来解释：</p>
@@ -337,7 +337,7 @@
 <p>{lr}表示有两列，第一列的值靠左排列，用l表示，第二列的值靠右排列，用r表示，如果是中间对齐则为c。</p>
 <p>然后下面三行是方程式，用&amp;分割，用\换行。</p>
 <p><strong>2.12 分段函数</strong><br>其实分段函数与方程组类似，示例如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">$$<br>y=<br>\begin&#123;equation&#125;<br>	\left\&#123;<br>		\begin&#123;array&#125;&#123;lr&#125;<br>		x-1 &amp; x \leq 0<br>		x+1 &amp; x&gt;0<br>		\end&#123;array&#125;<br>	\right. <br>\end&#123;equation&#125;<br>$$<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs plaintext">$$<br>y=<br>\begin&#123;equation&#125;<br>	\left\&#123;<br>		\begin&#123;array&#125;&#123;lr&#125;<br>		x-1 &amp; x \leq 0<br>		x+1 &amp; x&gt;0<br>		\end&#123;array&#125;<br>	\right. <br>\end&#123;equation&#125;<br>$$<br></code></pre></td></tr></table></figure>
 
 <p><img src="/2024/10/31/markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/image-20241101204432826.png" alt="image-20241101204432826"></p>
 <p>就是在\begin{equation}前加y&#x3D;即可。</p>
